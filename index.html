@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATS Facts</title>
+    <style>
+        body {
+            background: #F0F9F4; 
+        }
+        h1 {
+            color: #2C6E49;
+        }
+        .container {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .cat-image {
+            width: 400px;
+            height:400px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            padding:8px 64px; 
+            display: block;
+            background-color: #E365C1;
+            color: #F6EFEE;
+            border: none; 
+            border-radius: 8px;
+        }
+        .card {
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Conoce a un Nuevo Gatito!🐱📸✨</h1>
+            <h1>Michis App</h1>
+
+            <section id="randomMichis">
+              <h2>Michis aleatorios</h2>
+              
+            <div class=" container-cards">
+              <div class="card">
+                <img id="img1" width="150" alt="Foto gatito aleatorio">
+                <button class="save-favourites">Guardar michi en favoritos</button>
+              </div>
+          
+              <div class="card" >
+                <img id="img2" width="150" alt="Foto gatito aleatorio">
+                <button class="save-favourites">Guardar michi en favoritos</button>
+                </div>
+            </div>
+            <button id="random" onClick =" getImage()">Varios gatitos</button>
+             </section> 
+          
+        <section id="favoritesMichis">
+            <h2>Michis favoritos</h2>
+            <button id="get-favourites">Obtener al michi de favoritos</button>
+        
+            <card>
+              <img id="img3" width="150" alt="Foto gatito aleatorio">
+              <button id="delete-favourites">Eliminar michi de favoritos</button>
+            </card>
+          </section>
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

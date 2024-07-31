@@ -3,70 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CATS Facts</title>
-    <style>
-        body {
-            background: #F0F9F4; 
-        }
-        h1 {
-            color: #2C6E49;
-        }
-        .container {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            padding: 20px;
-        }
-        .cat-image {
-            width: 400px;
-            height:400px;
-            object-fit: cover;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-        button {
-            padding:8px 64px; 
-            display: block;
-            background-color: #E365C1;
-            color: #F6EFEE;
-            border: none; 
-            border-radius: 8px;
-        }
-        .card {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        }
-        
-    </style>
+    <title>CATS Facts</title>
+    
 </head>
 <body>
     <div class="container">
         <h1>¡Conoce a un Nuevo Gatito!🐱📸✨</h1>
-            <h1>Michis App</h1>
 
+        <span><i class="fa-regular fa-heart"></i></span>
             <section id="randomMichis">
               <h2>Michis aleatorios</h2>
               
             <div class=" container-cards">
               <div class="card">
                 <img id="img1" width="150" alt="Foto gatito aleatorio">
-                <button class="save-favourites">Guardar michi en favoritos</button>
+                <button class=" bg-icon save-favourites"><span><i class="fa-regular fa-heart fa-2x"></i></span></button>
               </div>
           
               <div class="card" >
                 <img id="img2" width="150" alt="Foto gatito aleatorio">
-                <button class="save-favourites">Guardar michi en favoritos</button>
+                <button class=" bg-icon save-favourites"><span><i class="fa-regular fa-heart fa-2x"></i></span></button>
                 </div>
             </div>
-            <button id="random" onClick =" getImage()">Varios gatitos</button>
+            <button class=" button" id="random" onClick =" getImage()">Varios gatitos</button>
              </section> 
           
         <section id="favoritesMichis">
             <h2>Michis favoritos</h2>
-            <button id="get-favourites">Obtener al michi de favoritos</button>
+            <button class="button" id="get-favourites">Obtener al michi de favoritos</button>
         
             <card>
               <img id="img3" width="150" alt="Foto gatito aleatorio">
